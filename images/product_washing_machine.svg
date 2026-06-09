@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9FAFB" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#D1D5DB" />
+    </linearGradient>
+    <linearGradient id="tubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="50%" stop-color="#1F2937" />
+      <stop offset="100%" stop-color="#374151" />
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#1E3A8A" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="360" rx="110" ry="12" fill="#000000" fill-opacity="0.15" />
+
+  <!-- Washing Machine Body -->
+  <rect x="90" y="60" width="220" height="280" rx="16" fill="url(#bodyGrad)" stroke="#9CA3AF" stroke-width="2" />
+
+  <!-- Top Panel Area -->
+  <rect x="90" y="60" width="220" height="60" rx="12" fill="#1F2937" />
+
+  <!-- Detergent Drawer -->
+  <rect x="110" y="75" width="50" height="30" rx="3" fill="#374151" stroke="#4B5563" />
+  <line x1="120" y1="97" x2="150" y2="97" stroke="#9CA3AF" stroke-width="2" />
+
+  <!-- Control Dial -->
+  <circle cx="200" cy="90" r="16" fill="#D1D5DB" stroke="#374151" stroke-width="2" />
+  <line x1="200" y1="90" x2="200" y2="78" stroke="#1F2937" stroke-width="3" stroke-linecap="round" />
+  <!-- Dots around dial -->
+  <circle cx="200" cy="70" r="1.5" fill="#3B82F6" />
+  <circle cx="215" cy="80" r="1.5" fill="#9CA3AF" />
+  <circle cx="218" cy="95" r="1.5" fill="#9CA3AF" />
+  <circle cx="185" cy="80" r="1.5" fill="#9CA3AF" />
+  <circle cx="182" cy="95" r="1.5" fill="#9CA3AF" />
+
+  <!-- Digital Display Screen -->
+  <rect x="235" y="75" width="60" height="30" rx="4" fill="#030712" />
+  <!-- Display lights -->
+  <text x="265" y="94" font-family="monospace" font-weight="bold" font-size="14" fill="#60A5FA" text-anchor="middle">0:45</text>
+  <text x="240" y="83" font-family="sans-serif" font-size="4" fill="#10B981">WASH</text>
+
+  <!-- Door Outer Ring -->
+  <circle cx="200" cy="225" r="85" fill="#D1D5DB" stroke="#9CA3AF" stroke-width="3" />
+  <circle cx="200" cy="225" r="80" fill="#E5E7EB" />
+  
+  <!-- Door Inner Rim -->
+  <circle cx="200" cy="225" r="68" fill="url(#tubGrad)" />
+
+  <!-- Water inside the tub -->
+  <path d="M 142,245 A 60,60 0 0,0 258,245 C 230,255 170,235 142,245 Z" fill="#93C5FD" opacity="0.8" />
+  <!-- Clothes outlines inside -->
+  <path d="M 160,210 C 170,210 180,230 170,240 C 160,250 150,230 160,210 Z" fill="#F87171" opacity="0.7" /> <!-- Red shirt -->
+  <path d="M 210,200 C 230,200 240,215 230,230 C 220,240 200,220 210,200 Z" fill="#6EE7B7" opacity="0.6" /> <!-- Green garment -->
+
+  <!-- Glass Door Cover -->
+  <circle cx="200" cy="225" r="66" fill="url(#glassGrad)" stroke="#FFFFFF" stroke-dasharray="10 5" stroke-opacity="0.3" />
+
+  <!-- Door Handle Grip -->
+  <path d="M 270,210 C 275,220 275,230 270,240" fill="none" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" />
+</svg>

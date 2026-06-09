@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3F4F6" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <linearGradient id="headbandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#374151" />
+      <stop offset="50%" stop-color="#4B5563" />
+      <stop offset="100%" stop-color="#374151" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="325" rx="80" ry="12" fill="#000000" fill-opacity="0.1" />
+
+  <!-- Headband -->
+  <path d="M110,210 C110,100 290,100 290,210" fill="none" stroke="url(#headbandGrad)" stroke-width="24" stroke-linecap="round" />
+  <!-- Inner thin metal band -->
+  <path d="M110,210 C110,105 290,105 290,210" fill="none" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Ear Cup Left -->
+  <g transform="translate(85, 180) rotate(-10 25 50)">
+    <!-- Cup Outer -->
+    <rect x="0" y="0" width="45" height="90" rx="22" fill="#1F2937" />
+    <!-- Cup Accent -->
+    <rect x="10" y="10" width="25" height="70" rx="12" fill="#2563EB" />
+    <!-- Joint -->
+    <rect x="15" y="-15" width="15" height="20" rx="4" fill="#4B5563" />
+  </g>
+
+  <!-- Ear Cup Right -->
+  <g transform="translate(270, 180) rotate(10 20 50)">
+    <!-- Cup Outer -->
+    <rect x="0" y="0" width="45" height="90" rx="22" fill="#1F2937" />
+    <!-- Cup Accent -->
+    <rect x="10" y="10" width="25" height="70" rx="12" fill="#2563EB" />
+    <!-- Joint -->
+    <rect x="15" y="-15" width="15" height="20" rx="4" fill="#4B5563" />
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9FAFB" />
+      <stop offset="100%" stop-color="#F3F4F6" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="stylusGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#D1D5DB" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="335" rx="110" ry="12" fill="#000000" fill-opacity="0.1" />
+
+  <!-- Tablet Body -->
+  <rect x="80" y="90" width="240" height="220" rx="16" fill="#1F2937" stroke="#4B5563" stroke-width="2" />
+  <!-- Screen Rim -->
+  <rect x="88" y="98" width="224" height="204" rx="10" fill="#030712" />
+  <!-- Screen -->
+  <rect x="94" y="104" width="212" height="192" rx="6" fill="url(#screenGrad)" />
+  
+  <!-- Reflection -->
+  <path d="M 94,104 L 200,104 L 94,210 Z" fill="#FFFFFF" opacity="0.15" />
+  
+  <!-- Front Camera -->
+  <circle cx="200" cy="94" r="2" fill="#374151" />
+
+  <!-- Stylus Pen (Resting at an angle) -->
+  <g transform="translate(290, 80) rotate(15)">
+    <!-- Stylus Body Shadow -->
+    <rect x="-3" y="10" width="8" height="180" rx="4" fill="#000000" opacity="0.1" />
+    <!-- Stylus Body -->
+    <rect x="-4" y="8" width="8" height="180" rx="4" fill="url(#stylusGrad)" />
+    <!-- Tip -->
+    <path d="M -4,188 L 0,198 L 4,188 Z" fill="#4B5563" />
+    <!-- Cap / Accent -->
+    <rect x="-4" y="8" width="8" height="12" rx="2" fill="#3B82F6" />
+  </g>
+</svg>

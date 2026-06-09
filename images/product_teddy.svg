@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9FAFB" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <linearGradient id="furGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" /> <!-- Golden Brown Fur -->
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+    <linearGradient id="earInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCA5A5" /> <!-- Pink Inner Ear -->
+      <stop offset="100%" stop-color="#F43F5E" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="340" rx="90" ry="12" fill="#000000" fill-opacity="0.15" />
+
+  <!-- Ears -->
+  <!-- Left Ear -->
+  <circle cx="140" cy="115" r="28" fill="url(#furGrad)" stroke="#451A03" stroke-width="1.5" />
+  <circle cx="140" cy="115" r="16" fill="url(#earInner)" />
+  <!-- Right Ear -->
+  <circle cx="260" cy="115" r="28" fill="url(#furGrad)" stroke="#451A03" stroke-width="1.5" />
+  <circle cx="260" cy="115" r="16" fill="url(#earInner)" />
+
+  <!-- Arms -->
+  <ellipse cx="110" cy="220" rx="20" ry="35" fill="url(#furGrad)" stroke="#451A03" stroke-width="1.5" transform="rotate(30, 110, 220)" />
+  <ellipse cx="290" cy="220" rx="20" ry="35" fill="url(#furGrad)" stroke="#451A03" stroke-width="1.5" transform="rotate(-30, 290, 220)" />
+
+  <!-- Feet (Legs) -->
+  <ellipse cx="145" cy="305" rx="28" ry="20" fill="url(#furGrad)" stroke="#451A03" stroke-width="1.5" />
+  <ellipse cx="145" cy="302" rx="18" ry="12" fill="#FEF08A" opacity="0.8" /> <!-- Footpad -->
+
+  <ellipse cx="255" cy="305" rx="28" ry="20" fill="url(#furGrad)" stroke="#451A03" stroke-width="1.5" />
+  <ellipse cx="255" cy="302" rx="18" ry="12" fill="#FEF08A" opacity="0.8" /> <!-- Footpad -->
+
+  <!-- Body (Torso) -->
+  <circle cx="200" cy="235" r="65" fill="url(#furGrad)" stroke="#451A03" stroke-width="2" />
+  <ellipse cx="200" cy="245" rx="42" ry="32" fill="#FEF08A" opacity="0.8" /> <!-- Tummy patch -->
+
+  <!-- Head -->
+  <circle cx="200" cy="155" r="55" fill="url(#furGrad)" stroke="#451A03" stroke-width="2" />
+
+  <!-- Eyes -->
+  <circle cx="180" cy="142" r="6" fill="#000" />
+  <circle cx="178" cy="140" r="2" fill="#FFF" /> <!-- Eye light -->
+
+  <circle cx="220" cy="142" r="6" fill="#000" />
+  <circle cx="218" cy="140" r="2" fill="#FFF" /> <!-- Eye light -->
+
+  <!-- Snout / Muzzle -->
+  <ellipse cx="200" cy="170" rx="18" ry="13" fill="#FEF08A" />
+  
+  <!-- Nose -->
+  <ellipse cx="200" cy="164" rx="8" ry="5" fill="#000" />
+  <!-- Mouth lines -->
+  <path d="M 200,169 L 200,176 C 200,179 194,180 194,177" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M 200,169 L 200,176 C 200,179 206,180 206,177" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Red Decorative Bowtie -->
+  <path d="M 180,200 L 220,210 L 220,190 L 180,200 Z" fill="#EF4444" stroke="#991B1B" stroke-width="1" />
+  <path d="M 220,200 L 180,210 L 180,190 L 220,200 Z" fill="#EF4444" stroke="#991B1B" stroke-width="1" />
+  <circle cx="200" cy="200" r="6" fill="#B91C1C" />
+</svg>

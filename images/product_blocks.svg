@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9FAFB" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <!-- Wood Texture simulation gradients -->
+    <linearGradient id="woodRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F87171" />
+      <stop offset="100%" stop-color="#DC2626" />
+    </linearGradient>
+    <linearGradient id="woodBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="woodYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+    <linearGradient id="woodGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ADE80" />
+      <stop offset="100%" stop-color="#16A34A" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadows -->
+  <ellipse cx="200" cy="320" rx="120" ry="12" fill="#000000" fill-opacity="0.12" />
+
+  <!-- Base Flat Board / Ground -->
+  <rect x="80" y="300" width="240" height="15" rx="4" fill="#E5E7EB" stroke="#D1D5DB" stroke-width="1" />
+
+  <!-- Left Supporting Pillar (Blue Rectangular block) -->
+  <rect x="110" y="180" width="40" height="120" rx="2" fill="url(#woodBlue)" stroke="#1D4ED8" stroke-width="1.5" />
+  <!-- Grain line -->
+  <path d="M 120,190 Q 130,240 120,290" fill="none" stroke="#1E40AF" stroke-width="1.5" opacity="0.3" />
+
+  <!-- Right Supporting Pillar (Green Rectangular block) -->
+  <rect x="250" y="180" width="40" height="120" rx="2" fill="url(#woodGreen)" stroke="#15803D" stroke-width="1.5" />
+  <!-- Grain line -->
+  <path d="M 270,190 Q 260,240 270,290" fill="none" stroke="#166534" stroke-width="1.5" opacity="0.3" />
+
+  <!-- Center Bridge Arch (Yellow Arch block) -->
+  <path d="M 150,180 L 250,180 L 250,220 C 230,220 225,200 200,200 C 175,200 170,220 150,220 Z" fill="url(#woodYellow)" stroke="#A16207" stroke-width="1.5" />
+  <text x="200" y="174" font-family="sans-serif" font-weight="900" font-size="12" fill="#854D0E">B A B Y</text>
+
+  <!-- Top Roof Triangle (Red Triangular block) -->
+  <path d="M 200,80 L 150,180 L 250,180 Z" fill="url(#woodRed)" stroke="#B91C1C" stroke-width="1.5" />
+  <!-- Letter block embedded -->
+  <circle cx="200" cy="140" r="14" fill="#FFF" opacity="0.9" />
+  <text x="200" y="145" font-family="sans-serif" font-weight="900" font-size="14" fill="#B91C1C" text-anchor="middle">A</text>
+
+  <!-- Extra small cylindrical blocks lying in front -->
+  <ellipse cx="140" cy="305" rx="16" ry="8" fill="url(#woodRed)" stroke="#B91C1C" stroke-width="1" />
+  <ellipse cx="140" cy="298" rx="16" ry="8" fill="#FCA5A5" />
+  
+  <ellipse cx="260" cy="305" rx="18" ry="8" fill="url(#woodYellow)" stroke="#CA8A04" stroke-width="1" />
+  <ellipse cx="260" cy="298" rx="18" ry="8" fill="#FEF08A" />
+</svg>

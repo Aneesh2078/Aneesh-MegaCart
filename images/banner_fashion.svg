@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="50%" stop-color="#db2777" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGrad)" />
+
+  <!-- Abstract Waves and Circles -->
+  <path d="M 0,400 Q 300,100 600,300 T 1200,100 L 1200,400 Z" fill="url(#bubbleGrad)" />
+  <circle cx="950" cy="180" r="140" fill="none" stroke="#f472b6" stroke-width="2" stroke-opacity="0.3" />
+  <circle cx="950" cy="180" r="100" fill="none" stroke="#f472b6" stroke-width="1" stroke-dasharray="8,8" stroke-opacity="0.4" />
+  
+  <!-- Floating Fashion Graphics (Right Side) -->
+  <!-- Sunglasses -->
+  <g transform="translate(860, 160)" stroke="#FBBF24" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M 10,25 C 25,10 65,10 80,25 C 85,25 90,25 95,25 C 110,10 150,10 165,25 C 175,45 160,65 140,65 C 110,65 100,45 95,45 L 80,45 C 75,45 65,65 35,65 C 15,65 0,45 10,25 Z" fill="#FBBF24" fill-opacity="0.1" />
+    <path d="M 10,25 L -10,35 C -20,40 -20,60 -10,65" />
+    <path d="M 165,25 L 185,35 C 195,40 195,60 185,65" />
+  </g>
+
+  <!-- Hanger -->
+  <g transform="translate(730, 120)" stroke="#FFFFFF" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 50,50 L 10,80 L 90,80 Z" />
+    <path d="M 50,50 C 50,30 65,30 65,40" stroke-width="3" />
+  </g>
+
+  <!-- Shopping Bags -->
+  <g transform="translate(980, 180)" stroke="#38BDF8" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="10" y="25" width="70" height="75" rx="4" fill="#38BDF8" fill-opacity="0.1" />
+    <path d="M 25,25 C 25,10 65,10 65,25" />
+    
+    <!-- Smaller bag behind -->
+    <rect x="-25" y="40" width="50" height="60" rx="3" stroke="#60A5FA" stroke-width="2" fill="#60A5FA" fill-opacity="0.05" />
+    <path d="M -15,40 C -15,28 15,28 15,40" stroke="#60A5FA" stroke-width="2" />
+  </g>
+
+  <!-- Sparks / Stars -->
+  <path d="M 700,90 L 705,100 L 715,105 L 705,110 L 700,120 L 695,110 L 685,105 L 695,100 Z" fill="#FFFFFF" />
+  <path d="M 920,80 L 923,86 L 932,89 L 923,92 L 920,98 L 917,92 L 908,89 L 917,86 Z" fill="#FBBF24" />
+  <path d="M 820,290 L 822,294 L 828,296 L 822,298 L 820,302 L 818,298 L 812,296 L 818,294 Z" fill="#38BDF8" />
+
+  <!-- Left Side Text Graphic -->
+  <g transform="translate(80, 120)">
+    <rect x="0" y="0" width="130" height="24" rx="12" fill="#EC4899" fill-opacity="0.2" stroke="#F472B6" stroke-width="1" />
+    <text x="65" y="15" fill="#F472B6" font-family="sans-serif" font-weight="900" font-size="10" text-anchor="middle" letter-spacing="1">SEASON'S HOTTEST</text>
+    
+    <text x="0" y="75" fill="#FFFFFF" font-family="sans-serif" font-weight="900" font-size="44" letter-spacing="-1">THE TRENDSETTERS</text>
+    <text x="0" y="120" fill="#FBBF24" font-family="sans-serif" font-weight="900" font-size="44" letter-spacing="-1">SUMMER STYLE EDIT</text>
+    
+    <text x="0" y="155" fill="#F3F4F6" font-family="sans-serif" font-weight="500" font-size="16">Flat 50% - 80% Off on Shirts, Sneakers, Eyewear &amp; Brands</text>
+
+    <!-- Callout badge -->
+    <g transform="translate(0, 180)">
+      <rect x="0" y="0" width="150" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <text x="12" y="19" fill="#10B981" font-family="sans-serif" font-weight="bold" font-size="12">✓</text>
+      <text x="28" y="19" fill="#E2E8F0" font-family="sans-serif" font-weight="600" font-size="11">100% ORIGINAL BRANDS</text>
+    </g>
+  </g>
+</svg>

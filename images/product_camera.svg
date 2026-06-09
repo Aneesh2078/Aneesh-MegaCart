@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3F4F6" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <linearGradient id="lensGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="50%" stop-color="#0891B2" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="325" rx="100" ry="12" fill="#000000" fill-opacity="0.1" />
+
+  <!-- Shutter Button & Dial -->
+  <rect x="110" y="118" width="25" height="10" rx="2" fill="#4B5563" />
+  <rect x="255" y="112" width="20" height="16" rx="2" fill="#1F2937" />
+
+  <!-- Camera Body -->
+  <rect x="90" y="125" width="220" height="145" rx="16" fill="#1F2937" />
+  <rect x="90" y="125" width="80" height="145" rx="16" fill="#111827" /> <!-- Grip area -->
+
+  <!-- Top Prism housing -->
+  <path d="M165,125 L180,105 L220,105 L235,125 Z" fill="#1F2937" />
+  <rect x="188" y="101" width="24" height="6" fill="#374151" /> <!-- Hot shoe -->
+
+  <!-- Lens Mount (Silver outer ring) -->
+  <circle cx="200" cy="205" r="64" fill="#9CA3AF" />
+  <!-- Lens Barrel -->
+  <circle cx="200" cy="205" r="58" fill="#111827" />
+  <!-- Red Ring (L-Series Accent) -->
+  <circle cx="200" cy="205" r="54" fill="none" stroke="#EF4444" stroke-width="2" />
+  <!-- Lens Front Element -->
+  <circle cx="200" cy="205" r="48" fill="#1F2937" />
+  <!-- Lens Glass -->
+  <circle cx="200" cy="205" r="40" fill="url(#lensGlass)" />
+
+  <!-- Glass Reflections -->
+  <path d="M180,175 A35,35 0 0,1 230,195 A35,35 0 0,0 180,175" fill="#FFFFFF" fill-opacity="0.2" />
+  <circle cx="215" cy="190" r="6" fill="#FFFFFF" fill-opacity="0.3" />
+</svg>

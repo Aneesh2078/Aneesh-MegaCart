@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="50%" stop-color="#115e59" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGrad)" />
+  
+  <!-- Glowing blobs -->
+  <circle cx="950" cy="200" r="160" fill="url(#glow)" filter="blur(55px)" />
+  <circle cx="300" cy="300" r="100" fill="#14b8a6" filter="blur(50px)" opacity="0.1" />
+
+  <!-- Abstract Geometry -->
+  <path d="M 650,400 C 800,300 900,100 1200,150 L 1200,400 Z" fill="#0f766e" fill-opacity="0.3" />
+  <circle cx="900" cy="200" r="120" fill="none" stroke="#2dd4bf" stroke-width="1.5" stroke-opacity="0.3" />
+  <circle cx="900" cy="200" r="80" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-dasharray="6,6" stroke-opacity="0.4" />
+
+  <!-- Floating Appliances (Right Side) -->
+  <!-- Refrigerator -->
+  <g transform="translate(850, 110)" stroke="#E2E8F0" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="0" y="0" width="70" height="150" rx="8" fill="#111827" fill-opacity="0.1" />
+    <path d="M 0,60 L 70,60" /> <!-- Door split -->
+    <path d="M 30,10 L 30,50" stroke-width="4" /> <!-- Upper handle -->
+    <path d="M 30,70 L 30,120" stroke-width="4" /> <!-- Lower handle -->
+    <rect x="15" y="15" width="40" height="25" rx="3" stroke="#2dd4bf" stroke-width="1.5" /> <!-- Smart Hub display -->
+    <line x1="22" y1="23" x2="35" y2="23" stroke="#2dd4bf" stroke-width="1.5" />
+    <line x1="22" y1="30" x2="48" y2="30" stroke="#2dd4bf" stroke-width="1.5" />
+  </g>
+
+  <!-- Microwave / Oven -->
+  <g transform="translate(720, 160)" stroke="#38BDF8" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="0" y="0" width="100" height="65" rx="6" fill="#111827" fill-opacity="0.1" />
+    <rect x="10" y="10" width="60" height="45" rx="2" stroke-width="2" /> <!-- Glass door -->
+    <circle cx="85" cy="20" r="4" fill="#38BDF8" stroke="none" /> <!-- Knobs -->
+    <circle cx="85" cy="35" r="4" fill="#38BDF8" stroke="none" />
+    <rect x="80" y="48" width="10" height="6" rx="1" stroke-width="1.5" /> <!-- Start button -->
+    <!-- Heat glow lines inside glass -->
+    <path d="M 20,32 Q 40,25 60,32" stroke="#EF4444" stroke-width="1.5" stroke-opacity="0.7" />
+  </g>
+
+  <!-- Espresso Machine -->
+  <g transform="translate(950, 180)" stroke="#FBBF24" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M 10,80 L 10,10 L 60,10 L 60,50 L 50,50 L 50,80 Z" />
+    <rect x="10" y="70" width="50" height="10" fill="#FBBF24" stroke="none" />
+    <path d="M 20,30 L 40,30" stroke-width="2" />
+    <circle cx="35" cy="50" r="6" fill="#E2E8F0" stroke-width="2" /> <!-- Cup -->
+    <path d="M 35,20 L 35,42" stroke-width="2" /> <!-- Liquid stream -->
+  </g>
+
+  <!-- Sparks -->
+  <path d="M 680,100 L 683,106 L 692,109 L 683,112 L 680,118 L 677,112 L 668,109 L 677,106 Z" fill="#FFFFFF" />
+  <path d="M 1080,90 L 1082,94 L 1088,96 L 1082,98 L 1080,102 L 1078,98 L 1072,96 L 1078,94 Z" fill="#2DD4BF" />
+
+  <!-- Left Side Text Graphic -->
+  <g transform="translate(80, 120)">
+    <rect x="0" y="0" width="130" height="24" rx="12" fill="#14B8A6" fill-opacity="0.2" stroke="#2DD4BF" stroke-width="1" />
+    <text x="65" y="15" fill="#2DD4BF" font-family="sans-serif" font-weight="900" font-size="10" text-anchor="middle" letter-spacing="1">HOME ESSENTIALS</text>
+    
+    <text x="0" y="75" fill="#FFFFFF" font-family="sans-serif" font-weight="900" font-size="44" letter-spacing="-1">LUXURY HOME</text>
+    <text x="0" y="120" fill="#FBBF24" font-family="sans-serif" font-weight="900" font-size="44" letter-spacing="-1">KITCHEN UPGRADES</text>
+    
+    <text x="0" y="155" fill="#E2E8F0" font-family="sans-serif" font-weight="500" font-size="16">No-Cost EMI starting from ₹999 on Refrigerators, Ovens &amp; Chimneys</text>
+
+    <!-- Callout badge -->
+    <g transform="translate(0, 180)">
+      <rect x="0" y="0" width="160" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <text x="12" y="19" fill="#FBBF24" font-family="sans-serif" font-weight="bold" font-size="12">⚡</text>
+      <text x="28" y="19" fill="#E2E8F0" font-family="sans-serif" font-weight="600" font-size="11">FREE INSTALLATION INCLUDED</text>
+    </g>
+  </g>
+</svg>

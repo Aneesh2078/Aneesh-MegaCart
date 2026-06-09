@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9FAFB" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <linearGradient id="glassTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#374151" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="320" rx="120" ry="12" fill="#000000" fill-opacity="0.15" />
+
+  <!-- Induction Cooktop Body Frame -->
+  <rect x="70" y="80" width="260" height="230" rx="16" fill="#1F2937" stroke="#4B5563" stroke-width="2.5" />
+  
+  <!-- Glass Surface Panel -->
+  <rect x="78" y="88" width="244" height="214" rx="12" fill="url(#glassTop)" />
+
+  <!-- Induction Heating Zone Circular Rings -->
+  <circle cx="200" cy="180" r="75" fill="none" stroke="#EF4444" stroke-dasharray="10 5" stroke-opacity="0.3" stroke-width="2" />
+  <circle cx="200" cy="180" r="70" fill="none" stroke="#EF4444" stroke-opacity="0.5" stroke-width="1.5" />
+  <circle cx="200" cy="180" r="50" fill="none" stroke="#EF4444" stroke-width="3" stroke-opacity="0.9" /> <!-- hot glowing core -->
+  <!-- Crosshairs inside zone -->
+  <line x1="200" y1="120" x2="200" y2="140" stroke="#EF4444" stroke-width="2" opacity="0.8" />
+  <line x1="200" y1="220" x2="200" y2="240" stroke="#EF4444" stroke-width="2" opacity="0.8" />
+  <line x1="140" y1="180" x2="160" y2="180" stroke="#EF4444" stroke-width="2" opacity="0.8" />
+  <line x1="240" y1="180" x2="260" y2="180" stroke="#EF4444" stroke-width="2" opacity="0.8" />
+
+  <!-- Brand text -->
+  <text x="200" y="108" font-family="sans-serif" font-weight="900" font-size="8" fill="#9CA3AF" text-anchor="middle" letter-spacing="2">INDUCTION HOB</text>
+
+  <!-- Digital Control Panel (At the bottom of glass) -->
+  <rect x="94" y="260" width="212" height="34" rx="6" fill="#111827" stroke="#374151" stroke-width="1" />
+
+  <!-- LED Display (e.g. Wattage/Temp) -->
+  <rect x="180" y="266" width="40" height="22" rx="2" fill="#000" />
+  <text x="200" y="282" font-family="monospace" font-weight="bold" font-size="11" fill="#F59E0B" text-anchor="middle">2000</text>
+
+  <!-- Control Buttons (Power, Temp Up/Down, Timer) -->
+  <!-- Power icon -->
+  <circle cx="112" cy="277" r="8" fill="#1F2937" />
+  <path d="M 112,273 L 112,277 M 110,275 A 3,3 0 1,0 114,275" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Function Selection -->
+  <circle cx="134" cy="277" r="8" fill="#1F2937" />
+  <text x="134" y="280" font-family="sans-serif" font-weight="bold" font-size="8" fill="#FFF" text-anchor="middle">F</text>
+
+  <!-- Minus button -->
+  <circle cx="160" cy="277" r="8" fill="#1F2937" />
+  <line x1="157" y1="277" x2="163" y2="277" stroke="#9CA3AF" stroke-width="2" />
+
+  <!-- Plus button -->
+  <circle cx="240" cy="277" r="8" fill="#1F2937" />
+  <line x1="237" y1="277" x2="243" y2="277" stroke="#9CA3AF" stroke-width="2" />
+  <line x1="240" y1="274" x2="240" y2="280" stroke="#9CA3AF" stroke-width="2" />
+
+  <!-- Timer button -->
+  <circle cx="266" cy="277" r="8" fill="#1F2937" />
+  <circle cx="266" cy="277" r="5" fill="none" stroke="#9CA3AF" stroke-width="1.2" />
+  <line x1="266" y1="277" x2="266" y2="274" stroke="#9CA3AF" stroke-width="1" />
+  <line x1="266" y1="277" x2="268" y2="277" stroke="#9CA3AF" stroke-width="1" />
+
+  <!-- Lock button -->
+  <circle cx="288" cy="277" r="8" fill="#1F2937" />
+  <rect x="285" y="275" width="6" height="5" rx="1" fill="#9CA3AF" />
+  <path d="M 286,275 L 286,273 A 2,2 0 0,1 290,273 L 290,275" fill="none" stroke="#9CA3AF" stroke-width="1" />
+</svg>

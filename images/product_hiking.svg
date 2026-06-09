@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9FAFB" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <linearGradient id="backpackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C" /> <!-- Rugged Orange & Charcoal -->
+      <stop offset="100%" stop-color="#9A3412" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="350" rx="75" ry="10" fill="#000000" fill-opacity="0.15" />
+
+  <!-- Backpack Body Structure (Tall, Rugged) -->
+  <rect x="120" y="70" width="160" height="260" rx="30" fill="#374151" stroke="#1F2937" stroke-width="2" />
+  <path d="M 125,100 L 275,100 L 265,310 L 135,310 Z" fill="url(#backpackGrad)" stroke="#1F2937" stroke-width="1.5" />
+
+  <!-- Top Hood Compartment -->
+  <path d="M 120,95 C 120,60 280,60 280,95 Z" fill="#4B5563" stroke="#1F2937" stroke-width="1.5" />
+  <!-- Hood Straps -->
+  <rect x="145" y="90" width="10" height="60" rx="1" fill="#1F2937" />
+  <rect x="245" y="90" width="10" height="60" rx="1" fill="#1F2937" />
+  <rect x="143" y="130" width="14" height="10" rx="2" fill="#FBBF24" /> <!-- buckle -->
+  <rect x="243" y="130" width="14" height="10" rx="2" fill="#FBBF24" /> <!-- buckle -->
+
+  <!-- Bungee Cord Grid (Front Attachment) -->
+  <path d="M 160,160 L 240,190 L 160,220 L 240,250" fill="none" stroke="#EF4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="200" cy="205" r="4" fill="#374151" />
+
+  <!-- Side Mesh Pockets (Water Bottle holder) -->
+  <!-- Left Pocket -->
+  <path d="M 120,200 L 110,210 L 110,260 L 122,270 Z" fill="#1F2937" />
+  <rect x="105" y="180" width="10" height="40" rx="3" fill="#60A5FA" opacity="0.8" /> <!-- water bottle -->
+  <!-- Right Pocket -->
+  <path d="M 280,200 L 290,210 L 290,260 L 278,270 Z" fill="#1F2937" />
+
+  <!-- Bottom Sleeping Bag Attachment Straps -->
+  <rect x="140" y="325" width="120" height="12" rx="4" fill="#4B5563" stroke="#1F2937" stroke-width="1" /> <!-- sleeping bag roll -->
+  <line x1="140" y1="331" x2="260" y2="331" stroke="#D1D5DB" stroke-width="1" stroke-dasharray="3 3" />
+  <!-- Straps holding the roll -->
+  <rect x="160" y="310" width="10" height="30" rx="1" fill="#1F2937" />
+  <rect x="230" y="310" width="10" height="30" rx="1" fill="#1F2937" />
+
+  <!-- Chest Harness Buckle Hint -->
+  <path d="M 120,150 L 140,150" stroke="#1F2937" stroke-width="4" />
+  <path d="M 280,150 L 260,150" stroke="#1F2937" stroke-width="4" />
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9FAFB" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <linearGradient id="chromeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4B5563" />
+      <stop offset="30%" stop-color="#9CA3AF" />
+      <stop offset="50%" stop-color="#F3F4F6" />
+      <stop offset="80%" stop-color="#9CA3AF" />
+      <stop offset="100%" stop-color="#374151" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="340" rx="90" ry="12" fill="#000000" fill-opacity="0.15" />
+
+  <!-- Coffee Machine Main Body Frame -->
+  <rect x="120" y="70" width="160" height="260" rx="12" fill="#1F2937" stroke="#111827" stroke-width="2" />
+  <!-- Metallic Faceplate -->
+  <rect x="135" y="80" width="130" height="150" rx="4" fill="url(#chromeGrad)" stroke="#4B5563" stroke-width="1" />
+
+  <!-- Top Cup Warmer Rail -->
+  <rect x="135" y="65" width="130" height="10" rx="2" fill="#374151" />
+
+  <!-- Pressure Gauge (Dial) -->
+  <circle cx="200" cy="115" r="18" fill="#FFF" stroke="#374151" stroke-width="2" />
+  <line x1="200" y1="115" x2="212" y2="108" stroke="#EF4444" stroke-width="2" stroke-linecap="round" /> <!-- dial hand -->
+  <circle cx="200" cy="115" r="2.5" fill="#000" />
+  <text x="200" y="129" font-family="sans-serif" font-size="5" fill="#374151" text-anchor="middle" font-weight="bold">BAR</text>
+
+  <!-- Side switches -->
+  <rect x="155" y="105" width="10" height="18" rx="2" fill="#111827" />
+  <line x1="160" y1="108" x2="160" y2="120" stroke="#10B981" stroke-width="2" />
+  
+  <rect x="235" y="105" width="10" height="18" rx="2" fill="#111827" />
+  <line x1="240" y1="108" x2="240" y2="120" stroke="#3B82F6" stroke-width="2" />
+
+  <!-- Portafilter / Filter Holder -->
+  <rect x="175" y="180" width="50" height="16" rx="4" fill="url(#chromeGrad)" stroke="#374151" stroke-width="1.5" />
+  <!-- Portafilter Handle (pointing forward-right) -->
+  <path d="M 220,188 L 290,205 C 294,206 295,212 291,214 L 288,215 L 220,192 Z" fill="#111827" stroke="#374151" stroke-width="1" />
+  
+  <!-- Grouphead and Dispenser nozzle -->
+  <rect x="185" y="165" width="30" height="16" fill="#374151" />
+  <!-- Coffee Streaming Down -->
+  <line x1="194" y1="196" x2="194" y2="250" stroke="#78350F" stroke-width="2.5" stroke-dasharray="8 4" stroke-linecap="round" />
+  <line x1="206" y1="196" x2="206" y2="250" stroke="#78350F" stroke-width="2.5" stroke-dasharray="8 4" stroke-linecap="round" />
+
+  <!-- Espresso Cup -->
+  <path d="M 180,245 L 220,245 L 215,280 L 185,280 Z" fill="#FFF" stroke="#D1D5DB" stroke-width="1.5" />
+  <path d="M 220,253 C 226,253 226,267 220,267" fill="none" stroke="#D1D5DB" stroke-width="2" /> <!-- handle -->
+  <!-- Coffee inside cup -->
+  <ellipse cx="200" cy="247" rx="16" ry="3" fill="#451A03" />
+
+  <!-- Bottom Drip Tray Grid -->
+  <rect x="130" y="295" width="140" height="30" rx="4" fill="#374151" stroke="#111827" stroke-width="1.5" />
+  <rect x="135" y="297" width="130" height="8" fill="#111827" /> <!-- Slot lines -->
+  <rect x="135" y="308" width="130" height="3" fill="#111827" />
+
+  <!-- Steam Wand (frother nozzle) -->
+  <path d="M 135,170 C 115,180 112,240 120,250" fill="none" stroke="#D1D5DB" stroke-width="4" stroke-linecap="round" />
+  <rect x="117" y="244" width="6" height="10" fill="#111827" /> <!-- nozzle tip -->
+</svg>

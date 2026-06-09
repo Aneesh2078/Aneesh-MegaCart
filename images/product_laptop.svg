@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3F4F6" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+  
+  <!-- Laptop Screen Outer -->
+  <rect x="90" y="110" width="220" height="140" rx="8" fill="#1F2937" />
+  <!-- Screen Inner -->
+  <rect x="98" y="118" width="204" height="124" rx="4" fill="url(#screenGrad)" />
+  
+  <!-- Web Camera -->
+  <circle cx="200" cy="114" r="2.5" fill="#4B5563" />
+  
+  <!-- Screen Reflection Glow -->
+  <path d="M98,118 L200,118 L98,220 Z" fill="#ffffff" fill-opacity="0.1" />
+  
+  <!-- Base Outer -->
+  <path d="M60,250 L340,250 L320,275 L80,275 Z" fill="#9CA3AF" />
+  <!-- Base Inner Trackpad -->
+  <rect x="170" y="255" width="60" height="15" rx="3" fill="#D1D5DB" />
+  <!-- Keyboard area hint -->
+  <rect x="85" y="247" width="230" height="3" rx="1.5" fill="#374151" />
+  
+  <!-- Base Bottom Shadow -->
+  <ellipse cx="200" cy="305" rx="120" ry="12" fill="#000000" fill-opacity="0.1" />
+</svg>

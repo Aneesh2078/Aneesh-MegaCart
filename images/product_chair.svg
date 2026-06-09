@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3F4F6" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <linearGradient id="meshGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4B5563" />
+      <stop offset="100%" stop-color="#1F2937" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="345" rx="80" ry="10" fill="#000000" fill-opacity="0.1" />
+
+  <!-- Headrest -->
+  <rect x="160" y="85" width="80" height="30" rx="10" fill="#111827" />
+  <rect x="194" y="115" width="12" height="15" fill="#4B5563" /> <!-- Support stem -->
+
+  <!-- Backrest -->
+  <rect x="140" y="125" width="120" height="110" rx="16" fill="url(#meshGrad)" stroke="#111827" stroke-width="4" />
+  <!-- Mesh lines hint -->
+  <line x1="160" y1="135" x2="160" y2="225" stroke="#374151" stroke-width="2" stroke-dasharray="4,4" />
+  <line x1="180" y1="135" x2="180" y2="225" stroke="#374151" stroke-width="2" stroke-dasharray="4,4" />
+  <line x1="200" y1="135" x2="200" y2="225" stroke="#374151" stroke-width="2" stroke-dasharray="4,4" />
+  <line x1="220" y1="135" x2="220" y2="225" stroke="#374151" stroke-width="2" stroke-dasharray="4,4" />
+  <line x1="240" y1="135" x2="240" y2="225" stroke="#374151" stroke-width="2" stroke-dasharray="4,4" />
+
+  <!-- Armrests -->
+  <!-- Left -->
+  <path d="M115,190 L135,190 L135,225 L115,225" fill="none" stroke="#111827" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+  <rect x="110" y="180" width="30" height="10" rx="3" fill="#374151" />
+  <!-- Right -->
+  <path d="M285,190 L265,190 L265,225 L285,225" fill="none" stroke="#111827" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" />
+  <rect x="260" y="180" width="30" height="10" rx="3" fill="#374151" />
+
+  <!-- Seat Cushion -->
+  <rect x="130" y="235" width="140" height="22" rx="8" fill="#111827" />
+
+  <!-- Seat Support Mechanism -->
+  <rect x="185" y="257" width="30" height="15" fill="#374151" />
+
+  <!-- Gas Lift Cylinder -->
+  <rect x="192" y="272" width="16" height="45" fill="#9CA3AF" />
+  <rect x="194" y="272" width="12" height="15" fill="#374151" />
+
+  <!-- 5-Star Base -->
+  <path d="M200,312 L150,330 M200,312 L250,330 M200,312 L170,300 M200,312 L230,300 M200,312 L200,335" stroke="#1F2937" stroke-width="10" stroke-linecap="round" />
+
+  <!-- Casters/Wheels -->
+  <circle cx="150" cy="336" r="8" fill="#111827" />
+  <circle cx="250" cy="336" r="8" fill="#111827" />
+  <circle cx="170" cy="304" r="8" fill="#111827" />
+  <circle cx="230" cy="304" r="8" fill="#111827" />
+  <circle cx="200" cy="341" r="8" fill="#111827" />
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9FAFB" />
+      <stop offset="100%" stop-color="#F3F4F6" />
+    </linearGradient>
+    <linearGradient id="luggageBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="335" rx="70" ry="10" fill="#000000" fill-opacity="0.1" />
+
+  <!-- Telescoping Handle (Extended) -->
+  <rect x="175" y="65" width="50" height="70" fill="none" stroke="#4B5563" stroke-width="6" stroke-linecap="round" />
+  <rect x="170" y="55" width="60" height="12" rx="3" fill="#1F2937" /> <!-- Handle grip -->
+
+  <!-- Suitcase Shell Body -->
+  <rect x="135" y="125" width="130" height="190" rx="16" fill="url(#luggageBlue)" stroke="#1E3A8A" stroke-width="2" />
+  
+  <!-- Vertical ridges/lines for texture -->
+  <g stroke="#1E3A8A" stroke-width="3" opacity="0.4" stroke-linecap="round">
+    <line x1="160" y1="150" x2="160" y2="290" />
+    <line x1="180" y1="150" x2="180" y2="290" />
+    <line x1="200" y1="150" x2="200" y2="290" />
+    <line x1="220" y1="150" x2="220" y2="290" />
+    <line x1="240" y1="150" x2="240" y2="290" />
+  </g>
+
+  <!-- Side Handle -->
+  <path d="M 135,200 C 127,200 127,220 135,220" fill="none" stroke="#1F2937" stroke-width="5" stroke-linecap="round" />
+
+  <!-- Corner Protectors (Metal patches) -->
+  <!-- Top Left -->
+  <path d="M 135,145 C 135,135 145,125 155,125" fill="none" stroke="#1F2937" stroke-width="4" />
+  <!-- Top Right -->
+  <path d="M 245,125 C 255,125 265,135 265,145" fill="none" stroke="#1F2937" stroke-width="4" />
+
+  <!-- Spinner Wheels (Bottom) -->
+  <!-- Left Wheel -->
+  <rect x="150" y="315" width="10" height="15" fill="#4B5563" />
+  <circle cx="155" cy="330" r="8" fill="#111827" />
+  <circle cx="155" cy="330" r="3" fill="#9CA3AF" />
+  <!-- Right Wheel -->
+  <rect x="240" y="315" width="10" height="15" fill="#4B5563" />
+  <circle cx="245" cy="330" r="8" fill="#111827" />
+  <circle cx="245" cy="330" r="3" fill="#9CA3AF" />
+</svg>

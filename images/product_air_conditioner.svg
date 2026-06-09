@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9FAFB" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <linearGradient id="acGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="240" rx="150" ry="12" fill="#000000" fill-opacity="0.1" />
+
+  <!-- AC Indoor Unit Body -->
+  <rect x="40" y="130" width="320" height="90" rx="12" fill="url(#acGrad)" stroke="#BDC3C7" stroke-width="1.5" />
+  
+  <!-- Subtle line contours -->
+  <line x1="40" y1="145" x2="360" y2="145" stroke="#E5E7EB" stroke-width="1" />
+  <line x1="40" y1="200" x2="360" y2="200" stroke="#BDC3C7" stroke-width="1.5" />
+
+  <!-- Air Outlet Flap (Vent) -->
+  <rect x="50" y="202" width="300" height="10" rx="2" fill="#ECF0F1" stroke="#BDC3C7" stroke-width="1" />
+
+  <!-- Air flow breeze indicators (Cool air waves) -->
+  <path d="M 80,225 C 80,245 90,250 85,270" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+  <path d="M 140,225 C 140,245 150,250 145,270" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+  <path d="M 200,225 C 200,245 210,250 205,270" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+  <path d="M 260,225 C 260,245 270,250 265,270" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+  <path d="M 320,225 C 320,245 330,250 325,270" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+
+  <!-- Intake Grill vents on top -->
+  <rect x="70" y="136" width="260" height="6" rx="1" fill="#BDC3C7" opacity="0.7" />
+
+  <!-- Temperature Digital Display Screen (glowing white/green) -->
+  <rect x="290" y="165" width="35" height="20" rx="3" fill="#1E2937" />
+  <text x="307" y="181" font-family="monospace" font-weight="bold" font-size="13" fill="#34D399" text-anchor="middle">16°</text>
+
+  <!-- Brand Logo -->
+  <text x="75" y="177" font-family="sans-serif" font-weight="bold" font-size="8" fill="#95A5A6" letter-spacing="1">AEROFLOW</text>
+
+  <!-- Status indicators (small green/blue LEDs) -->
+  <circle cx="335" cy="175" r="2" fill="#10B981" /> <!-- Power LED -->
+  <circle cx="343" cy="175" r="2" fill="#3B82F6" /> <!-- Smart Link LED -->
+</svg>

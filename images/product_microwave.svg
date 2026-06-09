@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9FAFB" />
+      <stop offset="100%" stop-color="#E5E7EB" />
+    </linearGradient>
+    <linearGradient id="microwaveSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B5563" />
+      <stop offset="50%" stop-color="#374151" />
+      <stop offset="100%" stop-color="#1F2937" />
+    </linearGradient>
+    <linearGradient id="windowGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F2937" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="310" rx="130" ry="12" fill="#000000" fill-opacity="0.15" />
+
+  <!-- Microwave Body -->
+  <rect x="60" y="100" width="280" height="190" rx="12" fill="url(#microwaveSteel)" stroke="#111827" stroke-width="2" />
+  <rect x="62" y="102" width="276" height="186" rx="10" fill="none" stroke="#6B7280" stroke-width="1.5" />
+
+  <!-- Front Door Frame -->
+  <rect x="70" y="115" width="190" height="160" rx="6" fill="#111827" />
+
+  <!-- Door Glass Window -->
+  <rect x="85" y="130" width="160" height="130" rx="3" fill="url(#windowGlass)" />
+  
+  <!-- Mesh Grid overlay on glass (typical of microwave windows) -->
+  <pattern id="meshGrid" width="4" height="4" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="0.8" fill="#FBBF24" opacity="0.3" />
+  </pattern>
+  <rect x="85" y="130" width="160" height="130" rx="3" fill="url(#meshGrid)" />
+
+  <!-- Roasted chicken outline inside (visible glow) -->
+  <path d="M 135,215 C 135,195 155,190 165,190 C 175,190 195,195 195,215 C 195,225 185,230 165,230 C 145,230 135,225 135,215 Z" fill="#D97706" opacity="0.85" />
+  <path d="M 130,220 C 130,225 140,230 150,220" fill="none" stroke="#92400E" stroke-width="3" />
+  <path d="M 200,220 C 200,225 190,230 180,220" fill="none" stroke="#92400E" stroke-width="3" />
+  <!-- Glass Turntable tray -->
+  <ellipse cx="165" cy="232" rx="40" ry="5" fill="#E5E7EB" opacity="0.5" />
+
+  <!-- Control Panel Right Side -->
+  <rect x="270" y="115" width="60" height="160" rx="6" fill="#1F2937" />
+
+  <!-- LED Display Screen -->
+  <rect x="276" y="125" width="48" height="30" rx="2" fill="#000" />
+  <text x="300" y="145" font-family="monospace" font-weight="bold" font-size="14" fill="#10B981" text-anchor="middle" letter-spacing="1">12:30</text>
+
+  <!-- Touch buttons -->
+  <circle cx="288" cy="175" r="5" fill="#4B5563" />
+  <circle cx="300" cy="175" r="5" fill="#4B5563" />
+  <circle cx="312" cy="175" r="5" fill="#4B5563" />
+
+  <circle cx="288" cy="190" r="5" fill="#4B5563" />
+  <circle cx="300" cy="190" r="5" fill="#4B5563" />
+  <circle cx="312" cy="190" r="5" fill="#4B5563" />
+
+  <!-- Quick Start / Stop buttons -->
+  <rect x="278" y="210" width="20" height="14" rx="2" fill="#EF4444" /> <!-- Stop -->
+  <rect x="302" y="210" width="20" height="14" rx="2" fill="#10B981" /> <!-- Start -->
+
+  <!-- Dial / Knob -->
+  <circle cx="300" cy="250" r="14" fill="#374151" stroke="#4B5563" stroke-width="2" />
+  <line x1="300" y1="250" x2="300" y2="240" stroke="#FFF" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Door Pull Handle -->
+  <rect x="250" y="128" width="6" height="134" rx="2" fill="#D1D5DB" stroke="#374151" stroke-width="1" />
+</svg>

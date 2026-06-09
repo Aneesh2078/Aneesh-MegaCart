@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Bags | MegaCart Plus</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark main-navbar sticky-top">
+    <div class="container py-1">
+      <a class="navbar-brand brand-logo" href="index.html">
+        Mega<span>Cart</span><small class="fs-6 fw-light italic ms-1">Plus</small>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbarContent">
+        <div class="mx-lg-auto my-2 my-lg-0 col-12 col-lg-6">
+          <form class="search-container" id="searchForm" onsubmit="event.preventDefault(); handleSearch();">
+            <input class="search-input" type="search" placeholder="Search for products, brands and more" aria-label="Search" id="searchInput">
+            <button class="search-btn" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+        <ul class="navbar-nav align-items-lg-center ms-auto">
+          <li class="nav-item my-1 my-lg-0">
+            <a class="nav-link cart-btn text-center d-flex align-items-center justify-content-center py-2" href="cart.html">
+              <i class="bi bi-cart3 me-1 fs-5"></i>
+              <span>Cart</span>
+              <span class="cart-badge" id="cartCountBadge">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Category Navbar -->
+  <div class="categories-bar py-2">
+    <div class="container d-flex justify-content-lg-between align-items-center">
+      <a href="top_offers.html" class="category-item">
+        <div class="feature-icon-wrapper bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-percent fs-5"></i></div>Top Offers
+      </a>
+      <a href="mobiles.html" class="category-item">
+        <div class="feature-icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-phone fs-5"></i></div>Mobiles
+      </a>
+      <a href="electronics.html" class="category-item">
+        <div class="feature-icon-wrapper bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-laptop fs-5"></i></div>Electronics
+      </a>
+      <a href="home_kitchen.html" class="category-item">
+        <div class="feature-icon-wrapper bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-house-door fs-5"></i></div>Home & Kitchen
+      </a>
+      <a href="appliances.html" class="category-item">
+        <div class="feature-icon-wrapper bg-info bg-opacity-10 text-info rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-plug fs-5"></i></div>Appliances
+      </a>
+      <a href="travel_bags.html" class="category-item active text-primary">
+        <div class="feature-icon-wrapper bg-secondary bg-opacity-10 text-dark rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-backpack-fill fs-5"></i></div>Travel Bags
+      </a>
+      <a href="toys.html" class="category-item">
+        <div class="feature-icon-wrapper bg-dark bg-opacity-10 text-dark rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-controller fs-5"></i></div>Toys & More
+      </a>
+    </div>
+  </div>
+
+  <main class="container my-4">
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Travel Bags</li>
+      </ol>
+    </nav>
+
+    <!-- Content Title -->
+    <div class="section-title-bar d-flex justify-content-between align-items-center shadow-sm">
+      <h2 class="section-title"><i class="bi bi-backpack-fill me-2 text-secondary"></i>Travel Bags &amp; Luggage</h2>
+      <span class="text-muted fs-6">6 Items Found</span>
+    </div>
+
+    <!-- Products Wrapper -->
+    <div class="products-wrapper">
+      <div class="row g-4">
+        
+        <!-- Product 1: Backpack -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">60% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Water-Resistant Backpack')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_bag.svg" alt="Water-Resistant Backpack"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Travel &amp; Accessories</div>
+              <a href="product-detail.html?id=8" class="product-name">Water-Resistant Anti-Theft Backpack with USB Charger Port</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.3</strong> (6,892 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹999</span>
+                <span class="original-price">₹2,499</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(8)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Suitcase -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">50% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Hardshell Suitcase Trolley')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_suitcase.svg" alt="Hardshell Suitcase Trolley"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Travel &amp; Accessories</div>
+              <a href="product-detail.html?id=19" class="product-name">Hardshell Rolling Suitcase Trolley Bag with Spinner Wheels (Large Size)</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.5</strong> (1,419 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹3,499</span>
+                <span class="original-price">₹6,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(19)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Gym Duffle Bag -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">55% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Gym Duffle Bag')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_duffle.svg" alt="Gym Duffle Bag"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Travel &amp; Accessories</div>
+              <a href="product-detail.html?id=28" class="product-name">Sporty Gym Duffle Bag with Shoe Compartment &amp; Wet Pocket</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.4</strong> (654 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹899</span>
+                <span class="original-price">₹1,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(28)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Laptop Messenger Bag -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="product-card">
+            <div class="discount-badge">50% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Laptop Messenger Bag')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_messenger.svg" alt="Laptop Messenger Bag"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Travel &amp; Accessories</div>
+              <a href="product-detail.html?id=29" class="product-name">Vintage Brown Leather Laptop Messenger Bag / Satchel</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.6</strong> (412 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹1,999</span>
+                <span class="original-price">₹3,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(29)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Hiking Backpack -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">50% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Hiking Backpack')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_hiking.svg" alt="Hiking Backpack"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Travel &amp; Accessories</div>
+              <a href="product-detail.html?id=30" class="product-name">65L Waterproof Rugged Camping &amp; Hiking Backpack</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.5</strong> (892 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹2,499</span>
+                <span class="original-price">₹4,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(30)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Crossbody Sling Bag -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">53% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Crossbody Sling Bag')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_sling.svg" alt="Crossbody Sling Bag"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Travel &amp; Accessories</div>
+              <a href="product-detail.html?id=31" class="product-name">Sleek Anti-Theft Crossbody Sling Bag with USB Port</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.3</strong> (1,025 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹699</span>
+                <span class="original-price">₹1,499</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(31)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container pb-4">
+      <div class="footer-bottom-bar d-flex flex-wrap justify-content-between align-items-center">
+        <div><span class="text-secondary">&copy; 2026 MegaCart.com. All rights reserved.</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100;">
+    <div id="cartToast" class="toast align-items-center text-white bg-success border-0" role="alert"><div class="d-flex"><div class="toast-body"><span id="toastMessage"></span></div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

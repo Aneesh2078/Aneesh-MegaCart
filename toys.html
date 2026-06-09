@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toys &amp; More | MegaCart Plus</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark main-navbar sticky-top">
+    <div class="container py-1">
+      <a class="navbar-brand brand-logo" href="index.html">
+        Mega<span>Cart</span><small class="fs-6 fw-light italic ms-1">Plus</small>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbarContent">
+        <div class="mx-lg-auto my-2 my-lg-0 col-12 col-lg-6">
+          <form class="search-container" id="searchForm" onsubmit="event.preventDefault(); handleSearch();">
+            <input class="search-input" type="search" placeholder="Search for products, brands and more" aria-label="Search" id="searchInput">
+            <button class="search-btn" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+        <ul class="navbar-nav align-items-lg-center ms-auto">
+          <li class="nav-item my-1 my-lg-0">
+            <a class="nav-link cart-btn text-center d-flex align-items-center justify-content-center py-2" href="cart.html">
+              <i class="bi bi-cart3 me-1 fs-5"></i>
+              <span>Cart</span>
+              <span class="cart-badge" id="cartCountBadge">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Category Navbar -->
+  <div class="categories-bar py-2">
+    <div class="container d-flex justify-content-lg-between align-items-center">
+      <a href="top_offers.html" class="category-item">
+        <div class="feature-icon-wrapper bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-percent fs-5"></i></div>Top Offers
+      </a>
+      <a href="mobiles.html" class="category-item">
+        <div class="feature-icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-phone fs-5"></i></div>Mobiles
+      </a>
+      <a href="electronics.html" class="category-item">
+        <div class="feature-icon-wrapper bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-laptop fs-5"></i></div>Electronics
+      </a>
+      <a href="home_kitchen.html" class="category-item">
+        <div class="feature-icon-wrapper bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-house-door fs-5"></i></div>Home & Kitchen
+      </a>
+      <a href="appliances.html" class="category-item">
+        <div class="feature-icon-wrapper bg-info bg-opacity-10 text-info rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-plug fs-5"></i></div>Appliances
+      </a>
+      <a href="travel_bags.html" class="category-item">
+        <div class="feature-icon-wrapper bg-secondary bg-opacity-10 text-dark rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-backpack-fill fs-5"></i></div>Travel Bags
+      </a>
+      <a href="toys.html" class="category-item active text-primary">
+        <div class="feature-icon-wrapper bg-dark bg-opacity-10 text-dark rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-controller fs-5"></i></div>Toys & More
+      </a>
+    </div>
+  </div>
+
+  <main class="container my-4">
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Toys &amp; More</li>
+      </ol>
+    </nav>
+
+    <!-- Content Title -->
+    <div class="section-title-bar d-flex justify-content-between align-items-center shadow-sm">
+      <h2 class="section-title"><i class="bi bi-controller me-2 text-dark"></i>Toys, Hobbies &amp; Gaming</h2>
+      <span class="text-muted fs-6">6 Items Found</span>
+    </div>
+
+    <!-- Products Wrapper -->
+    <div class="products-wrapper">
+      <div class="row g-4">
+        
+        <!-- Product 1: Drone -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">46% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Quadcopter Drone')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_drone.svg" alt="Quadcopter Drone"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Toys &amp; Hobbies</div>
+              <a href="product-detail.html?id=17" class="product-name">4K Camera GPS Quadcopter Drone with 30 Mins Flight Time</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.6</strong> (2,912 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹7,999</span>
+                <span class="original-price">₹14,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(17)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Console Controller -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">40% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Wireless Gamepad')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_console.svg" alt="Wireless Gamepad"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Gaming Gear</div>
+              <a href="product-detail.html?id=18" class="product-name">Wireless Game Console Controller with Bluetooth &amp; Vibration</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.5</strong> (4,561 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹2,999</span>
+                <span class="original-price">₹4,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(18)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: RC Car -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">40% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Remote Control Car')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_rc_car.svg" alt="Remote Control Car"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Toys &amp; Hobbies</div>
+              <a href="product-detail.html?id=32" class="product-name">1:16 Scale Offroad RC Monster Truck 4WD Racing Car</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.4</strong> (1,845 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹1,499</span>
+                <span class="original-price">₹2,499</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(32)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Wooden Blocks -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="product-card">
+            <div class="discount-badge">40% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Wooden Building Blocks')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_blocks.svg" alt="Wooden Building Blocks"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Toys &amp; Hobbies</div>
+              <a href="product-detail.html?id=33" class="product-name">Classic Natural Wood Building Blocks Set for Toddlers</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.7</strong> (954 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹899</span>
+                <span class="original-price">₹1,499</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(33)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: VR Headset -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">40% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'VR Headset')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_vr_headset.svg" alt="VR Headset"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Toys &amp; Hobbies</div>
+              <a href="product-detail.html?id=34" class="product-name">Virtual Reality VR Headset with Adjustable Lenses &amp; Head Strap</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.3</strong> (2,451 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹2,999</span>
+                <span class="original-price">₹4,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(34)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Teddy Bear -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">40% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Teddy Bear')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_teddy.svg" alt="Teddy Bear"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Toys &amp; Hobbies</div>
+              <a href="product-detail.html?id=35" class="product-name">Ultra-Soft Plush Teddy Bear with Cute Decorative Bow</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.8</strong> (3,205 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹599</span>
+                <span class="original-price">₹999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(35)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container pb-4">
+      <div class="footer-bottom-bar d-flex flex-wrap justify-content-between align-items-center">
+        <div><span class="text-secondary">&copy; 2026 MegaCart.com. All rights reserved.</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100;">
+    <div id="cartToast" class="toast align-items-center text-white bg-success border-0" role="alert"><div class="d-flex"><div class="toast-body"><span id="toastMessage"></span></div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

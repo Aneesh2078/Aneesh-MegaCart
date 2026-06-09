@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appliances | MegaCart Plus</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark main-navbar sticky-top">
+    <div class="container py-1">
+      <a class="navbar-brand brand-logo" href="index.html">
+        Mega<span>Cart</span><small class="fs-6 fw-light italic ms-1">Plus</small>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbarContent">
+        <div class="mx-lg-auto my-2 my-lg-0 col-12 col-lg-6">
+          <form class="search-container" id="searchForm" onsubmit="event.preventDefault(); handleSearch();">
+            <input class="search-input" type="search" placeholder="Search for products, brands and more" aria-label="Search" id="searchInput">
+            <button class="search-btn" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+        <ul class="navbar-nav align-items-lg-center ms-auto">
+          <li class="nav-item my-1 my-lg-0">
+            <a class="nav-link cart-btn text-center d-flex align-items-center justify-content-center py-2" href="cart.html">
+              <i class="bi bi-cart3 me-1 fs-5"></i>
+              <span>Cart</span>
+              <span class="cart-badge" id="cartCountBadge">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Category Navbar -->
+  <div class="categories-bar py-2">
+    <div class="container d-flex justify-content-lg-between align-items-center">
+      <a href="top_offers.html" class="category-item">
+        <div class="feature-icon-wrapper bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-percent fs-5"></i></div>Top Offers
+      </a>
+      <a href="mobiles.html" class="category-item">
+        <div class="feature-icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-phone fs-5"></i></div>Mobiles
+      </a>
+      <a href="electronics.html" class="category-item">
+        <div class="feature-icon-wrapper bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-laptop fs-5"></i></div>Electronics
+      </a>
+      <a href="home_kitchen.html" class="category-item">
+        <div class="feature-icon-wrapper bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-house-door fs-5"></i></div>Home & Kitchen
+      </a>
+      <a href="appliances.html" class="category-item active text-primary">
+        <div class="feature-icon-wrapper bg-info bg-opacity-10 text-info rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-plug fs-5"></i></div>Appliances
+      </a>
+      <a href="travel_bags.html" class="category-item">
+        <div class="feature-icon-wrapper bg-secondary bg-opacity-10 text-dark rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-backpack-fill fs-5"></i></div>Travel Bags
+      </a>
+      <a href="toys.html" class="category-item">
+        <div class="feature-icon-wrapper bg-dark bg-opacity-10 text-dark rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-controller fs-5"></i></div>Toys & More
+      </a>
+    </div>
+  </div>
+
+  <main class="container my-4">
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Appliances</li>
+      </ol>
+    </nav>
+
+    <!-- Content Title -->
+    <div class="section-title-bar d-flex justify-content-between align-items-center shadow-sm">
+      <h2 class="section-title"><i class="bi bi-plug me-2 text-info"></i>Smart Home Appliances</h2>
+      <span class="text-muted fs-6">6 Items Found</span>
+    </div>
+
+    <!-- Products Wrapper -->
+    <div class="products-wrapper">
+      <div class="row g-4">
+        
+        <!-- Product 1: Vacuum -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">36% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Robot Vacuum Cleaner')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_vacuum.svg" alt="Robot Vacuum Cleaner"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Appliances</div>
+              <a href="product-detail.html?id=13" class="product-name">Smart LiDAR Robot Vacuum Cleaner with Automatic Docking &amp; Mop</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.6</strong> (2,109 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹18,999</span>
+                <span class="original-price">₹29,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(13)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Smart TV -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="product-card">
+            <div class="discount-badge">30% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Smart OLED TV')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_tv.svg" alt="Smart OLED TV"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Appliances</div>
+              <a href="product-detail.html?id=14" class="product-name">55-inch Ultra HD 4K Smart OLED Television (Dolby Vision, Android TV)</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.7</strong> (4,152 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹34,999</span>
+                <span class="original-price">₹49,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(14)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Refrigerator -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">28% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Double-Door Refrigerator')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_refrigerator.svg" alt="Double-Door Refrigerator"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Appliances</div>
+              <a href="product-detail.html?id=20" class="product-name">Smart Double-Door Frost Free Refrigerator with Digital Inverter</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.5</strong> (1,205 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹24,999</span>
+                <span class="original-price">₹34,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(20)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Washing Machine -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">27% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Front Load Washing Machine')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_washing_machine.svg" alt="Front Load Washing Machine"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Appliances</div>
+              <a href="product-detail.html?id=21" class="product-name">Fully-Automatic Front Load Washing Machine with Inverter Direct Drive</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.7</strong> (1,845 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹28,999</span>
+                <span class="original-price">₹39,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(21)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Microwave -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">35% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Microwave Oven')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_microwave.svg" alt="Microwave Oven"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Appliances</div>
+              <a href="product-detail.html?id=22" class="product-name">Convection Microwave Oven with Touch Key Pad &amp; Grill Mode</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.4</strong> (954 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹8,999</span>
+                <span class="original-price">₹13,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(22)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: AC -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">28% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Split Air Conditioner')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_air_conditioner.svg" alt="Split Air Conditioner"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Appliances</div>
+              <a href="product-detail.html?id=23" class="product-name">1.5 Ton 5-Star Inverter Split Air Conditioner with PM 2.5 Filter</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.6</strong> (2,154 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹31,999</span>
+                <span class="original-price">₹44,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(23)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container pb-4">
+      <div class="footer-bottom-bar d-flex flex-wrap justify-content-between align-items-center">
+        <div><span class="text-secondary">&copy; 2026 MegaCart.com. All rights reserved.</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100;">
+    <div id="cartToast" class="toast align-items-center text-white bg-success border-0" role="alert"><div class="d-flex"><div class="toast-body"><span id="toastMessage"></span></div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

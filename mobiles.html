@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobiles | MegaCart Plus</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark main-navbar sticky-top">
+    <div class="container py-1">
+      <a class="navbar-brand brand-logo" href="index.html">
+        Mega<span>Cart</span><small class="fs-6 fw-light italic ms-1">Plus</small>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbarContent">
+        <div class="mx-lg-auto my-2 my-lg-0 col-12 col-lg-6">
+          <form class="search-container" id="searchForm" onsubmit="event.preventDefault(); handleSearch();">
+            <input class="search-input" type="search" placeholder="Search for products, brands and more" aria-label="Search" id="searchInput">
+            <button class="search-btn" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+        <ul class="navbar-nav align-items-lg-center ms-auto">
+          <li class="nav-item my-1 my-lg-0">
+            <a class="nav-link cart-btn text-center d-flex align-items-center justify-content-center py-2" href="cart.html">
+              <i class="bi bi-cart3 me-1 fs-5"></i>
+              <span>Cart</span>
+              <span class="cart-badge" id="cartCountBadge">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Category Navbar -->
+  <div class="categories-bar py-2">
+    <div class="container d-flex justify-content-lg-between align-items-center">
+      <a href="top_offers.html" class="category-item">
+        <div class="feature-icon-wrapper bg-danger bg-opacity-10 text-danger rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-percent fs-5"></i></div>Top Offers
+      </a>
+      <a href="mobiles.html" class="category-item active text-primary">
+        <div class="feature-icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-phone fs-5"></i></div>Mobiles
+      </a>
+      <a href="electronics.html" class="category-item">
+        <div class="feature-icon-wrapper bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-laptop fs-5"></i></div>Electronics
+      </a>
+      <a href="home_kitchen.html" class="category-item">
+        <div class="feature-icon-wrapper bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-house-door fs-5"></i></div>Home & Kitchen
+      </a>
+      <a href="appliances.html" class="category-item">
+        <div class="feature-icon-wrapper bg-info bg-opacity-10 text-info rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-plug fs-5"></i></div>Appliances
+      </a>
+      <a href="travel_bags.html" class="category-item">
+        <div class="feature-icon-wrapper bg-secondary bg-opacity-10 text-dark rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-backpack-fill fs-5"></i></div>Travel Bags
+      </a>
+      <a href="toys.html" class="category-item">
+        <div class="feature-icon-wrapper bg-dark bg-opacity-10 text-dark rounded-circle d-flex align-items-center justify-content-center mb-1 mx-auto" style="width: 40px; height: 40px;"><i class="bi bi-controller fs-5"></i></div>Toys & More
+      </a>
+    </div>
+  </div>
+
+  <main class="container my-4">
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Mobiles</li>
+      </ol>
+    </nav>
+
+    <!-- Content Title -->
+    <div class="section-title-bar d-flex justify-content-between align-items-center shadow-sm">
+      <h2 class="section-title"><i class="bi bi-phone me-2 text-primary"></i>Mobiles &amp; Smartphones</h2>
+      <span class="text-muted fs-6">3 Items Found</span>
+    </div>
+
+    <!-- Products Wrapper -->
+    <div class="products-wrapper">
+      <div class="row g-4">
+        
+        <!-- Product 1: Smartphone 5G -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">35% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Smartphone 5G')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_phone.svg" alt="Next-Gen Smartphone 5G"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Mobiles</div>
+              <a href="product-detail.html?id=1" class="product-name">Next-Gen Smartphone 5G (8GB RAM, 128GB ROM, Octa-Core)</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.6</strong> (12,305 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹12,999</span>
+                <span class="original-price">₹19,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart(1)"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Smartphone Pro Max -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="product-card">
+            <div class="discount-badge">16% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Smartphone Pro Max')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_phone_pro.svg" alt="Smartphone Pro Max"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Mobiles</div>
+              <a href="#" class="product-name">Smartphone Pro Max (Gold Titanium, 256GB Storage, Triple Camera)</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.8</strong> (954 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹74,999</span>
+                <span class="original-price">₹89,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart('Smartphone Pro Max')"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Clamshell Flip Phone -->
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">28% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Clamshell Flip Phone')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_phone_flip.svg" alt="Clamshell Flip Phone"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Mobiles</div>
+              <a href="#" class="product-name">Clamshell Smart Flip Phone (Flex Screen, Dual Front Cameras)</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.5</strong> (2,810 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹49,999</span>
+                <span class="original-price">₹69,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart('Clamshell Flip Phone')"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">35% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Smartphone 5G')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_phone.svg" alt="Next-Gen Smartphone 5G"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Mobiles</div>
+              <a href="#" class="product-name">Next-Gen Smartphone 5G (8GB RAM, 128GB ROM, Octa-Core)</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.6</strong> (12,305 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹12,999</span>
+                <span class="original-price">₹19,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart('Smartphone 5G')"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">16% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Smartphone Pro Max')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_phone_pro.svg" alt="Smartphone Pro Max"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Mobiles</div>
+              <a href="#" class="product-name">Smartphone Pro Max (Gold Titanium, 256GB Storage, Triple Camera)</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.8</strong> (954 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹74,999</span>
+                <span class="original-price">₹89,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart('Smartphone Pro Max')"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="product-card">
+            <div class="discount-badge">28% OFF</div>
+            <button class="wishlist-btn" onclick="toggleWishlist(this, 'Clamshell Flip Phone')"><i class="bi bi-heart"></i></button>
+            <div class="card-img-container"><img src="images/product_phone_flip.svg" alt="Clamshell Flip Phone"></div>
+            <div class="card-body-custom">
+              <div class="product-category">Mobiles</div>
+              <a href="#" class="product-name">Clamshell Smart Flip Phone (Flex Screen, Dual Front Cameras)</a>
+              <div class="rating-container">
+                <span class="rating-star"><i class="bi bi-star-fill"></i></span>
+                <span class="rating-text"><strong>4.5</strong> (2,810 ratings)</span>
+              </div>
+              <div class="price-container">
+                <span class="current-price">₹49,999</span>
+                <span class="original-price">₹69,999</span>
+              </div>
+              <button class="add-cart-btn mt-auto" onclick="addToCart('Clamshell Flip Phone')"><i class="bi bi-cart-plus me-1"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+  
+  <!-- Add to Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Product Added to Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <img id="modalImage" src="" class="img-fluid mb-3" style="max-height:200px;">
+        
+        <h4 id="modalName"></h4>
+        <p><strong>Category:</strong> <span id="modalCategory"></span></p>
+        <p><strong>Rating:</strong> <span id="modalRating"></span></p>
+        <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+        <p><strong>Original Price:</strong> <span id="modalOriginalPrice"></span></p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+        <button class="btn btn-primary">Go to Cart</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Product Details Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content ">
+
+      <div class="modal-header">
+        <h5 class="modal-title">
+          <i class="bi bi-cart-check-fill text-success me-2"></i>
+          Product Added To Cart
+        </h5>
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row align-items-center">
+
+          <div class="col-12 text-center mb-4">
+            <img id="modalImage"
+                 src=""
+                 alt="Product Image"
+                 class="img-fluid rounded shadow-sm"
+                 style="max-width: 220px; display: block; margin: 0 auto;">
+          </div>
+
+          <div class="col-12">
+
+            <h3 id="modalName"></h3>
+
+            <span id="modalCategory"
+                  class="badge bg-primary mb-3">
+            </span>
+
+            <p id="modalDescription"
+               class="text-muted">
+            </p>
+
+            <div class="mb-2">
+              ⭐ <span id="modalRating"></span>
+              (<span id="modalReviews"></span> reviews)
+            </div>
+
+            <h4 class="text-success">
+              ₹<span id="modalPrice"></span>
+            </h4>
+
+            <p>
+              <del>
+                ₹<span id="modalOriginalPrice"></span>
+              </del>
+
+              <span class="text-danger fw-bold ms-2">
+                <span id="modalDiscount"></span>% OFF
+              </span>
+            </p>
+
+            <hr>
+
+            <h6>Specifications</h6>
+
+            <ul id="modalSpecs"></ul>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+
+  <button class="btn btn-secondary"
+          data-bs-dismiss="modal">
+    Continue Shopping
+  </button>
+
+  <a href="cart.html"
+     class="btn btn-success">
+    <i class="bi bi-cart3 me-1"></i>
+    Go To Cart
+  </a>
+
+</div>
+        
+  </div>
+</div>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container pb-4">
+      <div class="footer-bottom-bar d-flex flex-wrap justify-content-between align-items-center">
+        <div><span class="text-secondary">&copy; 2026 MegaCart.com. All rights reserved.</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100;">
+    <div id="cartToast" class="toast align-items-center text-white bg-success border-0" role="alert"><div class="d-flex"><div class="toast-body"><span id="toastMessage"></span></div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
